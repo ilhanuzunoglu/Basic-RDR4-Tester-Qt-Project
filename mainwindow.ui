@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>272</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>İlhan Test Projesi</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="statusLabel">
+      <property name="text">
+       <string>Mevcut Değer: 50</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>24</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="valueSlider">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="minimum">
+       <number>0</number>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="value">
+       <number>50</number>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBothSides</enum>
+      </property>
+      <property name="tickInterval">
+       <number>10</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="decreaseButton">
+        <property name="text">
+         <string>Değeri Azalt (-)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="increaseButton">
+        <property name="text">
+         <string>Değeri Artır (+)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="brightnessButton">
+      <property name="text">
+       <string>Parlaklık</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="infoButton">
+      <property name="text">
+       <string>Cihaz Bilgileri</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="volumeButton">
+      <property name="text">
+       <string>Ses Kontrolü</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="musicButton">
+      <property name="text">
+       <string>Müzik Çalar</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="9"/>
+ <tabstops>
+  <tabstop>decreaseButton</tabstop>
+  <tabstop>increaseButton</tabstop>
+  <tabstop>valueSlider</tabstop>
+  <tabstop>brightnessButton</tabstop>
+  <tabstop>infoButton</tabstop>
+  <tabstop>volumeButton</tabstop>
+  <tabstop>musicButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
