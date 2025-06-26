@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <QProcess>
 
+class QComboBox;
 class QPushButton;
 
 class MusicPlayer : public QDialog
@@ -19,7 +20,10 @@ private slots:
     void stopMusic();
 
 private:
-    QProcess *musicProcess;
+    QComboBox *comboBox;
+    QPushButton *playBtn;
+    QPushButton *stopBtn;
+    QProcess *process;
 };
 
 #endif // MUSICPLAYER_H
